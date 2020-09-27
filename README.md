@@ -1,16 +1,25 @@
 # flutter_firebase_crashlist
 
-A new Flutter application.
+Flutter Firebase Crash List Installation
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. Setup the firebase console settings
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1. Then Setup the firebase settings in flutter
+   `android/build.gradle file`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   - `classpath 'com.google.gms:google-services:4.3.3'`
+   - `classpath 'com.google.firebase:firebase-crashlytics-gradle:2.3.0'`
+
+3. Then Setup the firebase settings in flutter
+   `android/app/build.gradle file`
+
+   - `apply plugin: 'com.google.gms.google-services'`
+
+   - `apply plugin: 'com.google.firebase.crashlytics'`
+   - `implementation 'com.google.firebase:firebase-analytics:17.5.0'`
+   - `implementation 'com.google.firebase:firebase-crashlytics:17.2.1'`
+
+4. Install package `firebase_crashlytics` for flutter
